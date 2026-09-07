@@ -98,7 +98,7 @@ function main() {
 
   writeFileSync(
     join(PUBLIC_DATA, 'conversations.json'),
-    JSON.stringify({ conversations, format_version: 1, site: 'ArquivoZap' }, null, 2),
+    JSON.stringify({ conversations, format_version: 1, site: 'PublicWhats' }, null, 2),
   );
 
   const files = readdirSync(RAW_CONVS).filter((f) => f.endsWith('.json'));

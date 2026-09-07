@@ -28,7 +28,7 @@ export function renderSidebar(
   header.className = 'sidebar-header';
   header.innerHTML = `
     <div class="brand">
-      <div class="brand-name">ArquivoZap</div>
+      <div class="brand-name">PublicWhats</div>
     </div>
   `;
 
@@ -97,7 +97,7 @@ export function renderSidebar(
   footer.className = 'sidebar-footer';
   footer.innerHTML = `
     <div>${conversations.length} conversas · corpus público</div>
-    <div><a href="/export/arquivozap-export.zip">Baixar export (.zip)</a></div>
+    <div><a href="/export/publicwhats-export.zip">Baixar export (.zip)</a></div>
   `;
   root.appendChild(footer);
 }

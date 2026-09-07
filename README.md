@@ -1,8 +1,9 @@
-# ArquivoZap (publicWhats)
+# PublicWhats
 
 Arquivo navegável de conversas de domínio público — busca, deep-links e proveniência.
 
-Repositório: [pedroabreutech/publicWhats](https://github.com/pedroabreutech/publicWhats)
+Repositório: [pedroabreutech/publicWhats](https://github.com/pedroabreutech/publicWhats)  
+Site: [https://publicwhats.vercel.app](https://publicwhats.vercel.app)
 
 Plataforma inspirada na arquitetura do [MasterWhats / masterzap](https://github.com/rafaelbressan/masterzap): SPA leve com **chunks JSON por dia** + **lazy load LRU**.
 
