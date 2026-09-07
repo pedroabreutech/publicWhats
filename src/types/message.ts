@@ -1,4 +1,4 @@
-/** Shared message / conversation types for ArquivoZap */
+/** Shared message / conversation types for PublicWhats */
 
 export type MessageType =
   | 'text'

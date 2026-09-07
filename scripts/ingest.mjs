@@ -46,7 +46,7 @@ async function main() {
   await download(INDEX_URL, indexPath);
 
   // Keep a copy of the original zip in public/export for download
-  copyFileSync(zipPath, join(PUBLIC_EXPORT, 'arquivozap-export.zip'));
+  copyFileSync(zipPath, join(PUBLIC_EXPORT, 'publicwhats-export.zip'));
 
   const buf = readFileSync(zipPath);
   const zip = await JSZip.loadAsync(buf);
@@ -57,7 +57,7 @@ async function main() {
     // Also mirror md/json into public/export
     if (name.endsWith('.json') || name.endsWith('.md')) {
       const content = await entry.async('nodebuffer');
-      const outName = name.replace(/^meses\//, 'meses/').replace(/^masterwhats-/, 'arquivozap-');
+      const outName = name.replace(/^meses\//, 'meses/').replace(/^masterwhats-/, 'publicwhats-');
       const exportDest = join(PUBLIC_EXPORT, outName);
       mkdirSync(dirname(exportDest), { recursive: true });
       writeFileSync(exportDest, content);

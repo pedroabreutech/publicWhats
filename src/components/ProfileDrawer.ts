@@ -102,8 +102,8 @@ export function showProfileDrawer(
   appendHeading(body, 'Exportar');
   const exportP = document.createElement('p');
   exportP.innerHTML = `
-    <a href="/export/arquivozap-${conversation.id}.json">JSON</a> ·
-    <a href="/export/arquivozap-${conversation.id}.md">Markdown</a>
+    <a href="/export/publicwhats-${conversation.id}.json">JSON</a> ·
+    <a href="/export/publicwhats-${conversation.id}.md">Markdown</a>
   `;
   body.appendChild(exportP);
 
