@@ -1,0 +1,319 @@
+{
+ "export": {
+  "generated_at": "2026-09-05T20:15:11.052Z",
+  "format_version": 1,
+  "site": "https://www.masterwhats.com.br",
+  "url": "https://www.masterwhats.com.br/#/chat/marcio-conjur",
+  "repository": "https://github.com/rafaelbressan/masterzap",
+  "timezone": "America/Sao_Paulo",
+  "utc_offset": "-03:00"
+ },
+ "conversation": {
+  "id": "marcio-conjur",
+  "participants": [
+   "DV",
+   "Marcio Conjur"
+  ],
+  "contact": "Marcio Conjur",
+  "saved_as": null,
+  "phone": "5511999824806",
+  "date_range": {
+   "start": "2024-03-28",
+   "end": "2024-04-04"
+  },
+  "total_messages": 18,
+  "media_counts": {
+   "images": 0,
+   "videos": 0,
+   "documents": 0
+  },
+  "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+  "source_detail": {
+   "kind": "police-report",
+   "label": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+   "document": "data/source/IPJ-A-3298613-2026.pdf",
+   "document_url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+   "document_pages": 218,
+   "made_public": "2026-09-01",
+   "how": "Transcrição manual das imagens do laudo; cada mensagem cita a página e a figura de origem."
+  },
+  "note": "Trechos citados no relatório policial — a conversa completa não consta do documento."
+ },
+ "profile": {
+  "about": "Consultor Jurídico",
+  "sections": [
+   {
+    "title": "Márcio Chaer",
+    "paragraphs": [
+     "Jornalista e advogado, fundador e diretor da [Consultor Jurídico (ConJur)](https://www.poder360.com.br/poder-justica/moraes-ajudou-a-organizar-evento-superexclusivo-de-vorcaro-em-londres/), veículo especializado em cobertura do Judiciário. Foi responsável por montar os painéis do fórum jurídico de Londres, em abril de 2024, bancado pelo Banco Master.",
+     "Salvo como \"Marcio Conjur\" na agenda de Vorcaro, é ele quem relata o trabalho de convencimento dos ministros: \"[O Ministro Alexandre realmente mandou whatsApp para os colegas](https://www.masterwhats.com.br/chat/marcio-conjur#msg-3) ⟨28/03/2024 15:32 · laudo p. 182, fig. 188⟩\", escreveu, contando que Gilmar Mendes recebeu o convite e que Luís Felipe Salomão iria \"de qualquer forma\" porque \"[o Xandão nunca nega fogo](https://www.masterwhats.com.br/chat/marcio-conjur#msg-3) ⟨28/03/2024 15:32 · laudo p. 182, fig. 188⟩\". Reproduziu no chat a mensagem que Moraes enviou aos colegas convidando para o evento.",
+     "Vorcaro respondeu que o \"[ideal nos convites nao sair o Banco como realizador](https://www.masterwhats.com.br/chat/marcio-conjur#msg-7) ⟨28/03/2024 16:53 · laudo p. 182, fig. 188⟩\" — e Chaer concordou: \"Sem dúvida\". Foi também por ele que passou o [convite ao diretor-geral da PF](https://www.masterwhats.com.br/chat/marcio-conjur#msg-10) ⟨03/04/2024 09:36 · laudo p. 214, fig. 226⟩, Andrei Rodrigues, com \"todas as despesas bancadas por nós\"."
+    ]
+   }
+  ],
+  "sources": [
+   "https://www.poder360.com.br/poder-justica/moraes-ajudou-a-organizar-evento-superexclusivo-de-vorcaro-em-londres/"
+  ]
+ },
+ "messages": [
+  {
+   "id": 1,
+   "timestamp": "2024-03-28T12:07:18-03:00",
+   "date": "2024-03-28",
+   "time": "12:07:18",
+   "sender": "DV",
+   "content": "Vamos em frente!",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 2,
+   "timestamp": "2024-03-28T12:08:44-03:00",
+   "date": "2024-03-28",
+   "time": "12:08:44",
+   "sender": "Marcio Conjur",
+   "content": "Ok",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 3,
+   "timestamp": "2024-03-28T15:32:45-03:00",
+   "date": "2024-03-28",
+   "time": "15:32:45",
+   "sender": "Marcio Conjur",
+   "content": "Doutor, só para posicioná-lo.\nO Ministro Alexandre realmente mandou whatsApp para os colegas. Falei com ministro Gilmar agora. Ele confirmou ter recebido mas diz que ainda \"vai olhar\" a possibilidade. Difícil alguém não aceitar convite de AM. O ministro Luís Felipe Salomão, por exemplo, disse que como o Xandão nunca nega fogo, ele vai de qualquer forma. Salomão perguntou se pode levar o filho. Eu disse que acho que sim. Gilmar mandou eu falar com o chefe de gabinete, o Granzotto. Vou dividir a tarefa com Laura da Foco.",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 4,
+   "timestamp": "2024-03-28T15:32:57-03:00",
+   "date": "2024-03-28",
+   "time": "15:32:57",
+   "sender": "Marcio Conjur",
+   "content": "A mensagem que Xandão mandou pro Gilmar:",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 5,
+   "timestamp": "2024-03-28T15:33:14-03:00",
+   "date": "2024-03-28",
+   "time": "15:33:14",
+   "sender": "Marcio Conjur",
+   "content": "Gostaria de te convidar para participar de um Evento jurídico-político em Londres, 24 a 27 de abril, com a presença do Financial Times inclusive. Serão homenageados os Pres Temer e o Presidente do Senado, nosso amigo, Rodrigo Pacheco.\nVocê participará de uma painel. A estadia poderá será até 28/4.\nÉ organizado pelo CONJUR, Correio Brasiliense e Banco Master.\nTopa?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "forwarded": true,
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 6,
+   "timestamp": "2024-03-28T15:34:06-03:00",
+   "date": "2024-03-28",
+   "time": "15:34:06",
+   "sender": "Marcio Conjur",
+   "content": "(Só informo porque, eventualmente, teremos que trocar algum nome)",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 7,
+   "timestamp": "2024-03-28T16:53:14-03:00",
+   "date": "2024-03-28",
+   "time": "16:53:14",
+   "sender": "DV",
+   "content": "Ok. Ideal nos convites nao sair o Banco como realizador do evento, concorda?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 8,
+   "timestamp": "2024-03-28T16:54:04-03:00",
+   "date": "2024-03-28",
+   "time": "16:54:04",
+   "sender": "Marcio Conjur",
+   "content": "Sem dúvida",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 182,
+   "source_figure": 188
+  },
+  {
+   "id": 9,
+   "timestamp": "2024-04-03T09:35:57-03:00",
+   "date": "2024-04-03",
+   "time": "09:35:57",
+   "sender": "DV",
+   "content": "Opa tudo bem",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 214,
+   "source_figure": 226
+  },
+  {
+   "id": 10,
+   "timestamp": "2024-04-03T09:36:05-03:00",
+   "date": "2024-04-03",
+   "time": "09:36:05",
+   "sender": "DV",
+   "content": "Ministro fez convite ao andrei PF",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 214,
+   "source_figure": 226
+  },
+  {
+   "id": 11,
+   "timestamp": "2024-04-03T09:37:37-03:00",
+   "date": "2024-04-03",
+   "time": "09:37:37",
+   "sender": "Marcio Conjur",
+   "content": "ótimo.",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 214,
+   "source_figure": 226
+  },
+  {
+   "id": 12,
+   "timestamp": "2024-04-03T10:21:22-03:00",
+   "date": "2024-04-03",
+   "time": "10:21:22",
+   "sender": "Marcio Conjur",
+   "content": "Eu fiz o mesmo",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 214,
+   "source_figure": 226
+  },
+  {
+   "id": 13,
+   "timestamp": "2024-04-04T10:50:14-03:00",
+   "date": "2024-04-04",
+   "time": "10:50:14",
+   "sender": "Marcio Conjur",
+   "content": "Marcio, bom dia!",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "forwarded": true,
+   "source_page": 215,
+   "source_figure": 227
+  },
+  {
+   "id": 14,
+   "timestamp": "2024-04-04T10:50:14-03:00",
+   "date": "2024-04-04",
+   "time": "10:50:14",
+   "sender": "Marcio Conjur",
+   "content": "Aqui é EPF Ana Beatriz, assistente do Diretor-Geral da Polícia Federal",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "forwarded": true,
+   "source_page": 215,
+   "source_figure": 227
+  },
+  {
+   "id": 15,
+   "timestamp": "2024-04-04T10:50:15-03:00",
+   "date": "2024-04-04",
+   "time": "10:50:15",
+   "sender": "Marcio Conjur",
+   "content": "Ele informou que tem interesse em participar do evento em Londres, mas pediu para que eu averiguasse sobre questões logísticas",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "forwarded": true,
+   "source_page": 215,
+   "source_figure": 227
+  },
+  {
+   "id": 16,
+   "timestamp": "2024-04-04T10:50:15-03:00",
+   "date": "2024-04-04",
+   "time": "10:50:15",
+   "sender": "Marcio Conjur",
+   "content": "algum custo (hospedagem, passagem) é coberto pelos organizadores?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "forwarded": true,
+   "source_page": 215,
+   "source_figure": 227
+  },
+  {
+   "id": 17,
+   "timestamp": "2024-04-04T10:50:15-03:00",
+   "date": "2024-04-04",
+   "time": "10:50:15",
+   "sender": "Marcio Conjur",
+   "content": "Olá, Ana Beatriz",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 215,
+   "source_figure": 227
+  },
+  {
+   "id": 18,
+   "timestamp": "2024-04-04T10:50:15-03:00",
+   "date": "2024-04-04",
+   "time": "10:50:15",
+   "sender": "Marcio Conjur",
+   "content": "Todas as despesas bancadas por nós",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 215,
+   "source_figure": 227
+  }
+ ]
+}

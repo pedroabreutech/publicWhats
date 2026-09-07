@@ -1,0 +1,189 @@
+{
+ "export": {
+  "generated_at": "2026-09-05T20:15:11.052Z",
+  "format_version": 1,
+  "site": "https://www.masterwhats.com.br",
+  "url": "https://www.masterwhats.com.br/#/chat/romy-banco-master",
+  "repository": "https://github.com/rafaelbressan/masterzap",
+  "timezone": "America/Sao_Paulo",
+  "utc_offset": "-03:00"
+ },
+ "conversation": {
+  "id": "romy-banco-master",
+  "participants": [
+   "DV",
+   "Romy Banco Master"
+  ],
+  "contact": "Romy Banco Master",
+  "saved_as": null,
+  "phone": "5511914794467",
+  "date_range": {
+   "start": "2024-03-15",
+   "end": "2024-03-15"
+  },
+  "total_messages": 9,
+  "media_counts": {
+   "images": 0,
+   "videos": 0,
+   "documents": 1
+  },
+  "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+  "source_detail": {
+   "kind": "police-report",
+   "label": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+   "document": "data/source/IPJ-A-3298613-2026.pdf",
+   "document_url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+   "document_pages": 218,
+   "made_public": "2026-09-01",
+   "how": "Transcrição manual das imagens do laudo; cada mensagem cita a página e a figura de origem."
+  },
+  "note": "Trechos citados no relatório policial — a conversa completa não consta do documento."
+ },
+ "profile": {
+  "about": "Financeiro — Banco Master",
+  "sections": [
+   {
+    "title": "Romy",
+    "paragraphs": [
+     "Trabalhava no financeiro do Banco Master e executava os pagamentos. Não é figura pública e não foi identificada pela imprensa: a única fonte sobre ela é o próprio relatório.",
+     "A conversa dura três minutos, em 15 de março de 2024, e é uma das mais citadas do relatório. Vorcaro instrui: \"[esse barci moraes por favor nao deixe atrasar um dia](https://www.masterwhats.com.br/chat/romy-banco-master#msg-1) ⟨15/03/2024 15:17 · laudo p. 153, fig. 152⟩, coloca no seu controle. É o pgto mais importante que temos\". Ela responde que já estava fazendo \"neste instante\".",
+     "Ele completa: \"[Pode pagar sempre, sem nota](https://www.masterwhats.com.br/chat/romy-banco-master#msg-6) ⟨15/03/2024 15:19 · laudo p. 153, fig. 152⟩. Do jeito que for\". Três minutos depois ela envia o comprovante. A frase virou [manchete quando o sigilo caiu](https://ndmais.com.br/justica/vorcaro-cobrou-pagamento-a-mulher-de-moraes-sem-atrasos/)."
+    ]
+   }
+  ],
+  "sources": [
+   "https://ndmais.com.br/justica/vorcaro-cobrou-pagamento-a-mulher-de-moraes-sem-atrasos/"
+  ]
+ },
+ "messages": [
+  {
+   "id": 1,
+   "timestamp": "2024-03-15T15:17:40-03:00",
+   "date": "2024-03-15",
+   "time": "15:17:40",
+   "sender": "DV",
+   "content": "Romy esse barci moraes por favor nao deixe atrasar um dia, coloca no seu controle",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 2,
+   "timestamp": "2024-03-15T15:17:49-03:00",
+   "date": "2024-03-15",
+   "time": "15:17:49",
+   "sender": "DV",
+   "content": "É o pgto mais importante que temos",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 3,
+   "timestamp": "2024-03-15T15:18:09-03:00",
+   "date": "2024-03-15",
+   "time": "15:18:09",
+   "sender": "Romy Banco Master",
+   "content": "pode deixar, estou fazendo direto por aqui",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "quoted": "Romy esse barci moraes por favor nao deixe atrasar um dia, coloca no seu controle",
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 4,
+   "timestamp": "2024-03-15T15:18:12-03:00",
+   "date": "2024-03-15",
+   "time": "15:18:12",
+   "sender": "Romy Banco Master",
+   "content": "neste instante",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 5,
+   "timestamp": "2024-03-15T15:18:52-03:00",
+   "date": "2024-03-15",
+   "time": "15:18:52",
+   "sender": "DV",
+   "content": "Mas todo mês acompanha isso pra mim",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 6,
+   "timestamp": "2024-03-15T15:19:00-03:00",
+   "date": "2024-03-15",
+   "time": "15:19:00",
+   "sender": "DV",
+   "content": "Pode pagar sempre, sem nota",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 7,
+   "timestamp": "2024-03-15T15:19:04-03:00",
+   "date": "2024-03-15",
+   "time": "15:19:04",
+   "sender": "DV",
+   "content": "Do jeito que for",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 8,
+   "timestamp": "2024-03-15T15:19:16-03:00",
+   "date": "2024-03-15",
+   "time": "15:19:16",
+   "sender": "Romy Banco Master",
+   "content": "Ok",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  },
+  {
+   "id": 9,
+   "timestamp": "2024-03-15T15:21:48-03:00",
+   "date": "2024-03-15",
+   "time": "15:21:48",
+   "sender": "Romy Banco Master",
+   "content": "[anexo] barci.pdf — STR0007, Banco Master S/A → BARCI DE MORAES SOCIEDADE DE ADVOGADOS, R$ 3.422.268,14, 15/03/2024",
+   "type": "document",
+   "is_edited": false,
+   "attachment": "barci.pdf",
+   "urls": [],
+   "source_page": 153,
+   "source_figure": 152
+  }
+ ]
+}

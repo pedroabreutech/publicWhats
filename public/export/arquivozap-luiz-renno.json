@@ -1,0 +1,188 @@
+{
+ "export": {
+  "generated_at": "2026-09-05T20:15:11.052Z",
+  "format_version": 1,
+  "site": "https://www.masterwhats.com.br",
+  "url": "https://www.masterwhats.com.br/#/chat/luiz-renno",
+  "repository": "https://github.com/rafaelbressan/masterzap",
+  "timezone": "America/Sao_Paulo",
+  "utc_offset": "-03:00"
+ },
+ "conversation": {
+  "id": "luiz-renno",
+  "participants": [
+   "DV",
+   "Luiz Rennó"
+  ],
+  "contact": "Luiz Rennó",
+  "saved_as": null,
+  "phone": "553186058949",
+  "date_range": {
+   "start": "2024-04-19",
+   "end": "2024-04-19"
+  },
+  "total_messages": 9,
+  "media_counts": {
+   "images": 0,
+   "videos": 0,
+   "documents": 1
+  },
+  "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+  "source_detail": {
+   "kind": "police-report",
+   "label": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+   "document": "data/source/IPJ-A-3298613-2026.pdf",
+   "document_url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+   "document_pages": 218,
+   "made_public": "2026-09-01",
+   "how": "Transcrição manual das imagens do laudo; cada mensagem cita a página e a figura de origem."
+  },
+  "note": "Trechos citados no relatório policial — a conversa completa não consta do documento."
+ },
+ "profile": {
+  "about": "Estamos mantendo reservado",
+  "sections": [
+   {
+    "title": "Luiz Rennó",
+    "paragraphs": [
+     "Empresário mineiro do círculo de Vorcaro. Aparece uma única vez no relatório, em 19 de abril de 2024, mas o trecho é dos mais diretos sobre como o fórum de Londres era vendido.",
+     "Vorcaro oferece a ida a ele e a um sócio: \"[Semana que vem estou fazendo um evento super exclusivo com alexandre de moraes em londres](https://www.masterwhats.com.br/chat/luiz-renno#msg-2) ⟨19/04/2024 10:15 · laudo p. 185, fig. 191⟩\". Manda o convite digital do Grupo Voto e pede discrição — \"[Pede pra ele nao passar adiante](https://www.masterwhats.com.br/chat/luiz-renno#msg-6) ⟨19/04/2024 10:15 · laudo p. 185, fig. 191⟩. Estamos mantendo reservado\".",
+     "E explica o critério de quem entra: \"[Concorrente dele nao vai pq nao se da c alexandre](https://www.masterwhats.com.br/chat/luiz-renno#msg-8) ⟨19/04/2024 10:15 · laudo p. 185, fig. 191⟩\". O evento foi [financiado pelo Banco Master](https://www.poder360.com.br/poder-justica/vorcaro-do-banco-master-financiou-eventos-com-ministros-do-stf/) sem aparecer como realizador."
+    ]
+   }
+  ],
+  "sources": [
+   "https://www.poder360.com.br/poder-justica/vorcaro-do-banco-master-financiou-eventos-com-ministros-do-stf/"
+  ]
+ },
+ "messages": [
+  {
+   "id": 1,
+   "timestamp": "2024-04-19T10:14:22-03:00",
+   "date": "2024-04-19",
+   "time": "10:14:22",
+   "sender": "Luiz Rennó",
+   "content": "Aqui, sou extremamente preocupado com dinheiro dos outros! Estou montando uma pasta e ao final te apresentarei nos centavos ok?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 2,
+   "timestamp": "2024-04-19T10:15:00-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:00",
+   "sender": "DV",
+   "content": "Semana que vem estou fazendo um evento super exclusivo com alexandre de moraes em londres",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 3,
+   "timestamp": "2024-04-19T10:15:05-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:05",
+   "sender": "DV",
+   "content": "Talvez valha a ida de vcs",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 4,
+   "timestamp": "2024-04-19T10:15:06-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:06",
+   "sender": "DV",
+   "content": "Dois",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 5,
+   "timestamp": "2024-04-19T10:15:22-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:22",
+   "sender": "DV",
+   "content": "[anexo] DigitalInviteVersão 2 — GRUPO VOTO · I FÓRUM JURÍDICO BRASIL DE IDEIAS · LONDRES · 24-26 Abril",
+   "type": "document",
+   "is_edited": false,
+   "attachment": "DigitalInviteVersão 2",
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 6,
+   "timestamp": "2024-04-19T10:15:33-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:33",
+   "sender": "DV",
+   "content": "Pede pra ele nao passar adiante",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 7,
+   "timestamp": "2024-04-19T10:15:41-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:41",
+   "sender": "DV",
+   "content": "Estamos mantendo reservado",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 8,
+   "timestamp": "2024-04-19T10:15:50-03:00",
+   "date": "2024-04-19",
+   "time": "10:15:50",
+   "sender": "DV",
+   "content": "Concorrente dele nao vai pq nao se da c alexandre",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  },
+  {
+   "id": 9,
+   "timestamp": "2024-04-19T10:16:30-03:00",
+   "date": "2024-04-19",
+   "time": "10:16:30",
+   "sender": "Luiz Rennó",
+   "content": "Ok! Volto com vc",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 185,
+   "source_figure": 191
+  }
+ ]
+}

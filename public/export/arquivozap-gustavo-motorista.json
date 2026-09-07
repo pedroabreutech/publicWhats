@@ -1,0 +1,145 @@
+{
+ "export": {
+  "generated_at": "2026-09-05T20:15:11.052Z",
+  "format_version": 1,
+  "site": "https://www.masterwhats.com.br",
+  "url": "https://www.masterwhats.com.br/#/chat/gustavo-motorista",
+  "repository": "https://github.com/rafaelbressan/masterzap",
+  "timezone": "America/Sao_Paulo",
+  "utc_offset": "-03:00"
+ },
+ "conversation": {
+  "id": "gustavo-motorista",
+  "participants": [
+   "DV",
+   "Gustavo Motorista"
+  ],
+  "contact": "Gustavo Motorista",
+  "saved_as": null,
+  "phone": "5511942328664",
+  "date_range": {
+   "start": "2023-12-21",
+   "end": "2023-12-21"
+  },
+  "total_messages": 6,
+  "media_counts": {
+   "images": 0,
+   "videos": 0,
+   "documents": 0
+  },
+  "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+  "source_detail": {
+   "kind": "police-report",
+   "label": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+   "document": "data/source/IPJ-A-3298613-2026.pdf",
+   "document_url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+   "document_pages": 218,
+   "made_public": "2026-09-01",
+   "how": "Transcrição manual das imagens do laudo; cada mensagem cita a página e a figura de origem."
+  },
+  "note": "Trechos citados no relatório policial — a conversa completa não consta do documento."
+ },
+ "profile": {
+  "about": "Motorista — São Paulo",
+  "sections": [
+   {
+    "title": "Gustavo",
+    "paragraphs": [
+     "Motorista de Vorcaro em São Paulo. Não é figura pública; a única fonte é o relatório.",
+     "As seis mensagens são de 21 de dezembro de 2023 — o dia do primeiro encontro, intermediado por [Fábio Faria](https://www.masterwhats.com.br/chat/fabio-faria). A segurança do anfitrião pediu o modelo e a placa do carro para autorizar a entrada na garagem, e é Gustavo quem confirma os dados: \"[Range Rover Vogue](https://www.masterwhats.com.br/chat/gustavo-motorista#msg-3) ⟨21/12/2023 10:42 · laudo p. 20, fig. 15⟩\".",
+     "Em seguida Vorcaro repassa o endereço — \"[Tucumã 99](https://www.masterwhats.com.br/chat/gustavo-motorista#msg-4) ⟨21/12/2023 10:46 · laudo p. 20, fig. 16⟩\" — e avisa: \"Vamos nesse endereço agora\"."
+    ]
+   }
+  ],
+  "sources": []
+ },
+ "messages": [
+  {
+   "id": 1,
+   "timestamp": "2023-12-21T08:16:44-03:00",
+   "date": "2023-12-21",
+   "time": "08:16:44",
+   "sender": "DV",
+   "content": "Descendo",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 20,
+   "source_figure": 15
+  },
+  {
+   "id": 2,
+   "timestamp": "2023-12-21T10:42:16-03:00",
+   "date": "2023-12-21",
+   "time": "10:42:16",
+   "sender": "DV",
+   "content": "Modelo e placa nosso carro",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 20,
+   "source_figure": 15
+  },
+  {
+   "id": 3,
+   "timestamp": "2023-12-21T10:42:52-03:00",
+   "date": "2023-12-21",
+   "time": "10:42:52",
+   "sender": "Gustavo Motorista",
+   "content": "Range Rover Vogue\nRSB7C37",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 20,
+   "source_figure": 15
+  },
+  {
+   "id": 4,
+   "timestamp": "2023-12-21T10:46:44-03:00",
+   "date": "2023-12-21",
+   "time": "10:46:44",
+   "sender": "DV",
+   "content": "Tucumã 99",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "forwarded": true,
+   "source_page": 20,
+   "source_figure": 16
+  },
+  {
+   "id": 5,
+   "timestamp": "2023-12-21T10:46:48-03:00",
+   "date": "2023-12-21",
+   "time": "10:46:48",
+   "sender": "DV",
+   "content": "Descendo",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 20,
+   "source_figure": 16
+  },
+  {
+   "id": 6,
+   "timestamp": "2023-12-21T10:46:51-03:00",
+   "date": "2023-12-21",
+   "time": "10:46:51",
+   "sender": "DV",
+   "content": "Vamos nesse endereço agora",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 20,
+   "source_figure": 16
+  }
+ ]
+}
