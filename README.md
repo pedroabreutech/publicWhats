@@ -1,24 +1,34 @@
-# ArquivoZap
+# ArquivoZap (publicWhats)
 
 Arquivo navegável de conversas de domínio público — busca, deep-links e proveniência.
 
-Plataforma nova inspirada na arquitetura do [MasterWhats / masterzap](https://github.com/rafaelbressan/masterzap) (Rafael Bressan): SPA leve com **chunks JSON por dia** + **lazy load LRU**.
+Repositório: [pedroabreutech/publicWhats](https://github.com/pedroabreutech/publicWhats)
+
+Plataforma inspirada na arquitetura do [MasterWhats / masterzap](https://github.com/rafaelbressan/masterzap): SPA leve com **chunks JSON por dia** + **lazy load LRU**.
 
 ## Stack
 
 - Vite 6 + TypeScript (vanilla, sem framework)
-- Corpus público (35 conversas / ~66.602 mensagens)
-- Export `.md` / `.json` / `.zip` em `/export/`
+- Corpus público (35 conversas / ~66.602 mensagens) já em `public/data/`
+- Export `.md` / `.json` / `.zip` em `public/export/`
+- Áudios e avatares em `public/assets/`
 
-## Como rodar
+## Como rodar (clone completo)
 
 ```bash
-npm install --cache /tmp/npm-cache-arquivozap   # se o cache global tiver problema de permissão
-npm run prepare-data   # ingest do zip público + chunk por dia
+git clone https://github.com/pedroabreutech/publicWhats.git
+cd publicWhats
+npm install
 npm run dev
 ```
 
-Abra `http://localhost:5173`.
+Abra `http://localhost:5173`. Os dados já vêm no repositório — não é necessário rodar `prepare-data` para usar o app.
+
+### Regenerar dados (opcional)
+
+```bash
+npm run prepare-data   # re-baixa o zip público e recria chunks
+```
 
 ## Rotas
 
@@ -26,16 +36,9 @@ Abra `http://localhost:5173`.
 - `#/c/{conversationId}` — conversa
 - `#/c/{conversationId}/m/{messageId}` — mensagem exata
 
-## Dados
+## Áudios
 
-1. `npm run ingest` baixa `masterwhats-export.zip` + `conversations.json` do espelho público
-2. `npm run chunk` gera `public/data/{id}/{date}.json`, `index.json`, `search-index.json`
-
-Fonte dos dados: [masterwhats.recomendeme.com.br](https://masterwhats.recomendeme.com.br/) / relatório PF IPJ-A 3298613/2026.
-
-### Áudios
-
-Há 4 MP3 públicos em `public/assets/` (`audio-nikolas-ferreira`, `silas-malafaia`, `flavio-bolsonaro`, `lula-dilma`). Mensagens com `audio_src` tocam no player; as ~462 `.opus` da Martha não vieram no export — aparecem como “Áudio indisponível” (com transcrição quando existir).
+Há 4 MP3 em `public/assets/` (`audio-nikolas-ferreira`, `silas-malafaia`, `flavio-bolsonaro`, `lula-dilma`). Mensagens `.opus` sem arquivo aparecem como “Áudio indisponível”.
 
 ## Aviso
 
