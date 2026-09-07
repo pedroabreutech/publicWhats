@@ -8,7 +8,8 @@
     "ingest": "node scripts/ingest.mjs",
     "chunk": "node scripts/chunk.mjs",
     "prepare-data": "npm run ingest && npm run chunk",
-    "build": "npm run prepare-data && tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build",
+    "build:full": "npm run prepare-data && npm run build",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
