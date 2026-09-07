@@ -1,0 +1,1139 @@
+{
+  "conversations": [
+    {
+      "id": "alexandre-de-moraes",
+      "participants": [
+        "DV",
+        "Alexandre de Moraes BRASILIA"
+      ],
+      "contact": "Alexandre de Moraes BRASILIA",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-09-17",
+        "end": "2025-11-17"
+      },
+      "total_messages": 62,
+      "media_counts": {
+        "images": 4,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Foi. Seria melhor na sexta junto com os gringos mas foi o que deu pra fazer dent",
+        "timestamp": "2025-11-17T20:48:31",
+        "sender": "DV"
+      },
+      "phone": "556192664093",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Mensagens de DANIEL VORCARO enviadas como capturas de tela do aplicativo Notas em modo de visualização única; o conteúdo foi recuperado pela perícia e correlacionado ao envio pelos logs do sistema. Mensagens recebidas de visualização única não foram recuperadas.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Ocupado"
+    },
+    {
+      "id": "nikolas-ferreira",
+      "participants": [
+        "DV",
+        "Nikolas Ferreira"
+      ],
+      "contact": "Nikolas Ferreira",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-11-17",
+        "end": "2025-11-17"
+      },
+      "total_messages": 1,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "[áudio]",
+        "timestamp": "2025-11-17T00:00:00",
+        "sender": "Nikolas Ferreira"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "A data original da mensagem não foi informada; 2025-11-17 é uma data técnica provisória.",
+      "about": null
+    },
+    {
+      "id": "flavio-bolsonaro",
+      "participants": [
+        "DV",
+        "Flávio Bolsonaro"
+      ],
+      "contact": "Flávio Bolsonaro",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-09-08",
+        "end": "2025-11-16"
+      },
+      "total_messages": 9,
+      "media_counts": {
+        "images": 3,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Amém!",
+        "timestamp": "2025-11-16T00:00:05",
+        "sender": "Flávio Bolsonaro"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "A mensagem de áudio sobre o filme Dark Horse é datada de 08/09/2025. Os horários das demais mensagens não foram informados; a ordem foi preservada com horários técnicos sequenciais à meia-noite.",
+      "about": null
+    },
+    {
+      "id": "alberto-felix",
+      "participants": [
+        "DV",
+        "Alberto Felix de Oliveira Neto"
+      ],
+      "contact": "Alberto Felix de Oliveira Neto",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-07-14",
+        "end": "2025-10-01"
+      },
+      "total_messages": 14,
+      "media_counts": {
+        "images": 1,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Nao e bom",
+        "timestamp": "2025-10-01T21:46:48",
+        "sender": "DV"
+      },
+      "phone": "5511994881612",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Tesouraria — Banco Master"
+    },
+    {
+      "id": "thatiane-prime",
+      "participants": [
+        "DV",
+        "Thatiane Garcia"
+      ],
+      "contact": "Thatiane Garcia",
+      "owner": "DV",
+      "date_range": {
+        "start": "2023-12-27",
+        "end": "2025-08-21"
+      },
+      "total_messages": 28,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Vou ver outra forma",
+        "timestamp": "2025-08-21T14:39:13",
+        "sender": "DV"
+      },
+      "phone": "5511957424509",
+      "saved_as": "Thatiane Prime",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Verificando as possibilidades…"
+    },
+    {
+      "id": "martha-graeff",
+      "participants": [
+        "DV",
+        "Martha Graeff"
+      ],
+      "contact": "Martha Graeff",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-02-10",
+        "end": "2025-08-13"
+      },
+      "total_messages": 65772,
+      "media_counts": {
+        "images": 3930,
+        "videos": 430,
+        "documents": 55
+      },
+      "last_message": {
+        "content": "♥️",
+        "timestamp": "2025-08-13T23:27:25",
+        "sender": "DV"
+      },
+      "about": "💕"
+    },
+    {
+      "id": "ana-matos-mkt",
+      "participants": [
+        "DV",
+        "Ana Matos Mkt"
+      ],
+      "contact": "Ana Matos Mkt",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-04-18",
+        "end": "2025-08-02"
+      },
+      "total_messages": 99,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 5
+      },
+      "last_message": {
+        "content": "Oi. Tudo bem?\nOntem o grupo voto - Karin - deu trabalho com relação ao cancelame",
+        "timestamp": "2025-08-02T12:10:25",
+        "sender": "Ana Matos"
+      },
+      "phone": "5511943290909",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Deixa comigo"
+    },
+    {
+      "id": "ana-claudia-financeiro",
+      "participants": [
+        "DV",
+        "Ana Claudia Financeiro1"
+      ],
+      "contact": "Ana Claudia Financeiro1",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-07-24",
+        "end": "2025-07-24"
+      },
+      "total_messages": 4,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 1
+      },
+      "last_message": {
+        "content": "Disse que é prioridade",
+        "timestamp": "2025-07-24T12:59:47",
+        "sender": "Ana Claudia"
+      },
+      "phone": "553183288156",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Financeiro — Viking"
+    },
+    {
+      "id": "leo-palhares",
+      "participants": [
+        "DV",
+        "Leo Palhares Palhares"
+      ],
+      "contact": "Leo Palhares Palhares",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-05-13",
+        "end": "2025-07-24"
+      },
+      "total_messages": 37,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 3
+      },
+      "last_message": {
+        "content": "Está sob controle. Eles queriam que a empresa que fosse dona do ativo fosse uma ",
+        "timestamp": "2025-07-24T12:24:26",
+        "sender": "Leo Palhares"
+      },
+      "phone": "5511994931953",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Está sob controle"
+    },
+    {
+      "id": "eduardo-bolsonaro",
+      "participants": [
+        "Jair Bolsonaro",
+        "Eduardo Bolsonaro"
+      ],
+      "contact": "Eduardo Bolsonaro",
+      "owner": "Jair Bolsonaro",
+      "date_range": {
+        "start": "2025-06-24",
+        "end": "2025-07-17"
+      },
+      "total_messages": 44,
+      "media_counts": {
+        "images": 4,
+        "videos": 2,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Trump está avaliando uma série de sanções contra Alexandre de Moraes, diz The Wa",
+        "timestamp": "2025-07-17T00:00:05",
+        "sender": "Jair Bolsonaro"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "Os horários originais não foram informados; a ordem das mensagens foi preservada com horários técnicos sequenciais à meia-noite.",
+      "about": null
+    },
+    {
+      "id": "marcos-prime",
+      "participants": [
+        "DV",
+        "Marcus Matta"
+      ],
+      "contact": "Marcus Matta",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-05-09",
+        "end": "2025-07-16"
+      },
+      "total_messages": 21,
+      "media_counts": {
+        "images": 2,
+        "videos": 0,
+        "documents": 1
+      },
+      "last_message": {
+        "content": "[imagem — PSC] Recorte da conversa de MARCOS com VIVI MORAES: Marcos (17:56) \"Bo",
+        "timestamp": "2025-07-16T19:25:53",
+        "sender": "Marcos Prime"
+      },
+      "phone": "5511988101010",
+      "saved_as": "Marcos Prime",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Prime You"
+    },
+    {
+      "id": "silas-malafaia",
+      "participants": [
+        "Jair Bolsonaro",
+        "Silas Malafaia"
+      ],
+      "contact": "Silas Malafaia",
+      "owner": "Jair Bolsonaro",
+      "date_range": {
+        "start": "2025-07-11",
+        "end": "2025-07-15"
+      },
+      "total_messages": 7,
+      "media_counts": {
+        "images": 2,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Faça o video eu faço a versão em inglês por IA...",
+        "timestamp": "2025-07-15T12:59:13",
+        "sender": "Silas Malafaia"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "about": null
+    },
+    {
+      "id": "ciro-soares",
+      "participants": [
+        "DV",
+        "Ciro Soares"
+      ],
+      "contact": "Ciro Soares",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-04-14",
+        "end": "2025-06-19"
+      },
+      "total_messages": 51,
+      "media_counts": {
+        "images": 1,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Obvio",
+        "timestamp": "2025-06-19T17:50:49",
+        "sender": "DV"
+      },
+      "phone": "557181533776",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Estou indo no PG agora"
+    },
+    {
+      "id": "dv-self",
+      "participants": [
+        "DV",
+        "DV (autoenvio)"
+      ],
+      "contact": "DV (autoenvio)",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-05-13",
+        "end": "2025-05-13"
+      },
+      "total_messages": 1,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 1
+      },
+      "last_message": {
+        "content": "[anexo] CONTRATO VIKING PARTICIPAÇÕES LTDA",
+        "timestamp": "2025-05-13T10:12:49",
+        "sender": "DV"
+      },
+      "phone": "5511989253839",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Mensagens salvas"
+    },
+    {
+      "id": "angelo-silva",
+      "participants": [
+        "DV",
+        "Angelo Silva"
+      ],
+      "contact": "Angelo Silva",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-02-08",
+        "end": "2025-04-01"
+      },
+      "total_messages": 35,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 2
+      },
+      "last_message": {
+        "content": "Ok. Vou localizar amanhã.",
+        "timestamp": "2025-04-01T23:14:21",
+        "sender": "Angelo Silva"
+      },
+      "phone": "5511992668146",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Preso na Compliance Zero"
+    },
+    {
+      "id": "diretor-paulo-sergio-bacen",
+      "participants": [
+        "DV",
+        "Diretor Paulo Sergio Bacen"
+      ],
+      "contact": "Diretor Paulo Sergio Bacen",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-03-19",
+        "end": "2025-03-19"
+      },
+      "total_messages": 5,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Vai chamar paulo pra dar um aperto",
+        "timestamp": "2025-03-19T20:32:42",
+        "sender": "DV"
+      },
+      "phone": "556192146932",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Ex-diretor de Fiscalização do BC"
+    },
+    {
+      "id": "motorista-brasilia-sidney",
+      "participants": [
+        "DV",
+        "Motorista Brasilia Sidney"
+      ],
+      "contact": "Motorista Brasilia Sidney",
+      "owner": "DV",
+      "date_range": {
+        "start": "2025-02-26",
+        "end": "2025-02-26"
+      },
+      "total_messages": 8,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Ok",
+        "timestamp": "2025-02-26T18:46:23",
+        "sender": "Sidney"
+      },
+      "phone": "556198436116",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Brasília"
+    },
+    {
+      "id": "stella-vorcaro",
+      "participants": [
+        "DV",
+        "Stella Vorcaro"
+      ],
+      "contact": "Stella Vorcaro",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-11-05",
+        "end": "2024-11-05"
+      },
+      "total_messages": 2,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "To com alexandre moraes 😂",
+        "timestamp": "2024-11-05T22:02:00",
+        "sender": "DV"
+      },
+      "phone": "553189797374",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Família"
+    },
+    {
+      "id": "fabio-faria",
+      "participants": [
+        "DV",
+        "Fábio Faria"
+      ],
+      "contact": "Fábio Faria",
+      "owner": "DV",
+      "date_range": {
+        "start": "2023-12-21",
+        "end": "2024-07-17"
+      },
+      "total_messages": 151,
+      "media_counts": {
+        "images": 1,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Vou antes ou depois do almoco",
+        "timestamp": "2024-07-17T09:55:20",
+        "sender": "DV"
+      },
+      "phone": "556199910111",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Careca 19:30"
+    },
+    {
+      "id": "geraldo-brazil-journal",
+      "participants": [
+        "DV",
+        "Geraldo Brazil Journal"
+      ],
+      "contact": "Geraldo Brazil Journal",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-04-26",
+        "end": "2024-04-26"
+      },
+      "total_messages": 12,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Antes do meu debate com o tony Blair, os 3 ministros do STF se reuniram privadam",
+        "timestamp": "2024-04-26T15:03:40",
+        "sender": "DV"
+      },
+      "phone": "5521991247026",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Brazil Journal"
+    },
+    {
+      "id": "luiz-renno",
+      "participants": [
+        "DV",
+        "Luiz Rennó"
+      ],
+      "contact": "Luiz Rennó",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-04-19",
+        "end": "2024-04-19"
+      },
+      "total_messages": 9,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 1
+      },
+      "last_message": {
+        "content": "Ok! Volto com vc",
+        "timestamp": "2024-04-19T10:16:30",
+        "sender": "Luiz Rennó"
+      },
+      "phone": "553186058949",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Estamos mantendo reservado"
+    },
+    {
+      "id": "leo-serrano",
+      "participants": [
+        "DV",
+        "Leandro Serrano Giunchetti"
+      ],
+      "contact": "Leandro Serrano Giunchetti",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-04-10",
+        "end": "2024-04-10"
+      },
+      "total_messages": 4,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "E os ministros mais sensiveis tipo Alexandre, Tofolli, etc um casal por S-Class…",
+        "timestamp": "2024-04-10T13:04:59",
+        "sender": "Leo Serrano"
+      },
+      "phone": "5511969204644",
+      "saved_as": "Leo Serrano Giunchetti",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Produção de eventos"
+    },
+    {
+      "id": "marcio-conjur",
+      "participants": [
+        "DV",
+        "Marcio Conjur"
+      ],
+      "contact": "Marcio Conjur",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-03-28",
+        "end": "2024-04-04"
+      },
+      "total_messages": 18,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Todas as despesas bancadas por nós",
+        "timestamp": "2024-04-04T10:50:15",
+        "sender": "Marcio Conjur"
+      },
+      "phone": "5511999824806",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Consultor Jurídico"
+    },
+    {
+      "id": "romy-banco-master",
+      "participants": [
+        "DV",
+        "Romy Banco Master"
+      ],
+      "contact": "Romy Banco Master",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-03-15",
+        "end": "2024-03-15"
+      },
+      "total_messages": 9,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 1
+      },
+      "last_message": {
+        "content": "[anexo] barci.pdf — STR0007, Banco Master S/A → BARCI DE MORAES SOCIEDADE DE ADV",
+        "timestamp": "2024-03-15T15:21:48",
+        "sender": "Romy Banco Master"
+      },
+      "phone": "5511914794467",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Financeiro — Banco Master"
+    },
+    {
+      "id": "fabiano-zettel",
+      "participants": [
+        "DV",
+        "Fabiano Zettel 1"
+      ],
+      "contact": "Fabiano Zettel 1",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-02-08",
+        "end": "2024-02-08"
+      },
+      "total_messages": 14,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 1
+      },
+      "last_message": {
+        "content": "Ta no fluxo de pagamento para hj.",
+        "timestamp": "2024-02-08T12:44:23",
+        "sender": "Fabiano Zettel"
+      },
+      "phone": "5511932611111",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Preso desde março"
+    },
+    {
+      "id": "vivi-moraes",
+      "participants": [
+        "DV",
+        "Vivi Moraes"
+      ],
+      "contact": "Vivi Moraes",
+      "owner": "DV",
+      "date_range": {
+        "start": "2024-01-11",
+        "end": "2024-01-17"
+      },
+      "total_messages": 9,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 3
+      },
+      "last_message": {
+        "content": "[anexo] MINUTA CONTRATO BANCO MASTER FINAL — pró-labore de 36 parcelas mensais d",
+        "timestamp": "2024-01-17T10:10:02",
+        "sender": "Vivi Moraes"
+      },
+      "phone": "5511983445794",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Barci de Moraes Sociedade de Advogados"
+    },
+    {
+      "id": "michael",
+      "participants": [
+        "DV",
+        "Michael"
+      ],
+      "contact": "Michael",
+      "owner": "DV",
+      "date_range": {
+        "start": "2023-12-30",
+        "end": "2023-12-30"
+      },
+      "total_messages": 16,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Mas se foi o ministro que pediu tudo bem",
+        "timestamp": "2023-12-30T19:28:00",
+        "sender": "DV"
+      },
+      "phone": "5511956599130",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Campos do Jordão"
+    },
+    {
+      "id": "gustavo-motorista",
+      "participants": [
+        "DV",
+        "Gustavo Motorista"
+      ],
+      "contact": "Gustavo Motorista",
+      "owner": "DV",
+      "date_range": {
+        "start": "2023-12-21",
+        "end": "2023-12-21"
+      },
+      "total_messages": 6,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Vamos nesse endereço agora",
+        "timestamp": "2023-12-21T10:46:51",
+        "sender": "DV"
+      },
+      "phone": "5511942328664",
+      "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+      "note": "Trechos citados no relatório policial — a conversa completa não consta do documento.",
+      "source_document": {
+        "file": "data/source/IPJ-A-3298613-2026.pdf",
+        "url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+        "download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+        "sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+        "pages": 218
+      },
+      "about": "Motorista — São Paulo"
+    },
+    {
+      "id": "jair-bolsonaro",
+      "participants": [
+        "Jair Bolsonaro",
+        "Mauro Cid"
+      ],
+      "contact": "Mauro Cid",
+      "owner": "Jair Bolsonaro",
+      "date_range": {
+        "start": "2022-12-29",
+        "end": "2023-01-30"
+      },
+      "total_messages": 6,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Cid, a investigação sobre você é pra ver\nse me pega...",
+        "timestamp": "2023-01-30T00:00:01",
+        "sender": "Jair Bolsonaro"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "Horários não informados no material fornecido; 00:00:00 é um horário técnico. Outras datas foram identificadas pela PF/UOL, mas não tiveram conteúdo ou data detalhados.",
+      "about": null
+    },
+    {
+      "id": "meyer-nigri",
+      "participants": [
+        "Jair Bolsonaro",
+        "Meyer Nigri"
+      ],
+      "contact": "Meyer Nigri",
+      "owner": "Jair Bolsonaro",
+      "date_range": {
+        "start": "2022-06-26",
+        "end": "2022-06-26"
+      },
+      "total_messages": 6,
+      "media_counts": {
+        "images": 0,
+        "videos": 1,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Barroso diz que 'não há clima' para STF discutir aborto",
+        "timestamp": "2022-06-26T11:24:55-03:00",
+        "sender": "Jair Bolsonaro"
+      },
+      "phone": "5511999825150",
+      "saved_as": "Meyer Nigri",
+      "source": "Conteúdo fornecido pelo usuário",
+      "about": null
+    },
+    {
+      "id": "dilma-rousseff",
+      "participants": [
+        "Lula",
+        "Dilma Rousseff"
+      ],
+      "contact": "Dilma Rousseff",
+      "owner": "Lula",
+      "date_range": {
+        "start": "2016-03-04",
+        "end": "2016-03-16"
+      },
+      "total_messages": 20,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "[áudio]",
+        "timestamp": "2016-03-16T00:00:00",
+        "sender": "Lula"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "A transcrição é de 04/03/2016; o áudio fornecido foi datado de 16/03/2016. Os horários originais não foram informados.",
+      "about": null
+    },
+    {
+      "id": "roberto-teixeira",
+      "participants": [
+        "Lula",
+        "Roberto Teixeira",
+        "Valmir Moraes"
+      ],
+      "contact": "Roberto Teixeira",
+      "owner": "Lula",
+      "date_range": {
+        "start": "2016-02-26",
+        "end": "2016-03-09"
+      },
+      "total_messages": 21,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Eu não estou entendendo.",
+        "timestamp": "2016-03-09T19:22:58",
+        "sender": "Lula"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "As estruturas são baseadas em transcrições publicadas. Os WAVs são identificados no conteúdo, mas não foram fornecidos; as falas foram registradas como texto. Os horários das falas foram preenchidos tecnicamente em sequência a partir do início de cada ligação.",
+      "about": null
+    },
+    {
+      "id": "lurian-lula-da-silva",
+      "participants": [
+        "Lula",
+        "Lurian Lula da Silva",
+        "Valmir Moraes da Silva",
+        "Claudia"
+      ],
+      "contact": "Lurian Lula da Silva",
+      "owner": "Lula",
+      "date_range": {
+        "start": "2016-03-09",
+        "end": "2016-03-09"
+      },
+      "total_messages": 16,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Te amo. Tchau.",
+        "timestamp": "2016-03-09T19:17:19",
+        "sender": "Lurian Lula da Silva"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "A chamada registra a intermediação de Valmir Moraes da Silva e Claudia. Os horários das falas foram preenchidos tecnicamente em sequência a partir do início informado.",
+      "about": null
+    },
+    {
+      "id": "jaques-wagner",
+      "participants": [
+        "Lula",
+        "Jaques Wagner"
+      ],
+      "contact": "Jaques Wagner",
+      "owner": "Lula",
+      "date_range": {
+        "start": "2016-02-26",
+        "end": "2016-03-04"
+      },
+      "total_messages": 51,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Falou! Abraço, tchau.",
+        "timestamp": "2016-03-04T00:01:12",
+        "sender": "Jaques Wagner"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "Os horários não informados foram preenchidos tecnicamente em sequência. A ligação de 27/02 foi registrada a partir das 16:43. O bloco sobre a Casa Civil não tem data informada e foi agrupado tecnicamente em 04/03/2016.",
+      "about": null
+    },
+    {
+      "id": "lindbergh-farias",
+      "participants": [
+        "Lula",
+        "Lindbergh Farias"
+      ],
+      "contact": "Lindbergh Farias",
+      "owner": "Lula",
+      "date_range": {
+        "start": "2016-02-27",
+        "end": "2016-03-02"
+      },
+      "total_messages": 34,
+      "media_counts": {
+        "images": 0,
+        "videos": 0,
+        "documents": 0
+      },
+      "last_message": {
+        "content": "Se não sair eu vou para cima.",
+        "timestamp": "2016-03-02T09:13:27",
+        "sender": "Lindbergh Farias"
+      },
+      "source": "Conteúdo fornecido pelo usuário",
+      "note": "Os blocos são estruturas baseadas em transcrições publicadas, não reproduções integrais palavra por palavra. Os horários das falas foram preenchidos tecnicamente em sequência a partir do início informado de cada conversa.",
+      "about": null
+    }
+  ],
+  "format_version": 1,
+  "site": "ArquivoZap"
+}

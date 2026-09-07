@@ -1,0 +1,24 @@
+{
+  "name": "arquivozap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "ingest": "node scripts/ingest.mjs",
+    "chunk": "node scripts/chunk.mjs",
+    "prepare-data": "npm run ingest && npm run chunk",
+    "build": "npm run prepare-data && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  }
+}

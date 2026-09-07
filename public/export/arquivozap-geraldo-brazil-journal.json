@@ -1,0 +1,231 @@
+{
+ "export": {
+  "generated_at": "2026-09-05T20:15:11.052Z",
+  "format_version": 1,
+  "site": "https://www.masterwhats.com.br",
+  "url": "https://www.masterwhats.com.br/#/chat/geraldo-brazil-journal",
+  "repository": "https://github.com/rafaelbressan/masterzap",
+  "timezone": "America/Sao_Paulo",
+  "utc_offset": "-03:00"
+ },
+ "conversation": {
+  "id": "geraldo-brazil-journal",
+  "participants": [
+   "DV",
+   "Geraldo Brazil Journal"
+  ],
+  "contact": "Geraldo Brazil Journal",
+  "saved_as": null,
+  "phone": "5521991247026",
+  "date_range": {
+   "start": "2024-04-26",
+   "end": "2024-04-26"
+  },
+  "total_messages": 12,
+  "media_counts": {
+   "images": 0,
+   "videos": 0,
+   "documents": 0
+  },
+  "source": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+  "source_detail": {
+   "kind": "police-report",
+   "label": "IPJ-A nº 3298613/2026 — NADIP/DFIN/CGRC/DICOR/PF",
+   "document": "data/source/IPJ-A-3298613-2026.pdf",
+   "document_url": "https://github.com/rafaelbressan/masterzap/blob/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_download": "https://raw.githubusercontent.com/rafaelbressan/masterzap/main/data/source/IPJ-A-3298613-2026.pdf",
+   "document_sha256": "23cfdfa410c47ab09cbb2b443965e3a3095d9bc3dc5fb266efff76d6f5192b60",
+   "document_pages": 218,
+   "made_public": "2026-09-01",
+   "how": "Transcrição manual das imagens do laudo; cada mensagem cita a página e a figura de origem."
+  },
+  "note": "Trechos citados no relatório policial — a conversa completa não consta do documento."
+ },
+ "profile": {
+  "about": "Brazil Journal",
+  "sections": [
+   {
+    "title": "Geraldo Samor",
+    "paragraphs": [
+     "Jornalista, fundador do [Brazil Journal](https://braziljournal.com/), veículo de economia e negócios com forte penetração na Faria Lima. Ex-repórter da Veja e do Wall Street Journal.",
+     "A conversa com Vorcaro é curta e reveladora do que o banqueiro esperava da imprensa. Em 26 de abril de 2024, dia seguinte ao debate com Tony Blair em Londres, Vorcaro pede que a matéria mencione que \"[antes do meu debate com o tony Blair, os 3 ministros do STF se reuniram privadamente](https://www.masterwhats.com.br/chat/geraldo-brazil-journal#msg-4) ⟨26/04/2024 14:59 · laudo p. 187, fig. 194⟩\" com o ex-primeiro-ministro — e diz explicitamente que \"[Alexandre pediu](https://www.masterwhats.com.br/chat/geraldo-brazil-journal#msg-1) ⟨26/04/2024 14:57 · laudo p. 187, fig. 194⟩\". O jornalista pede esclarecimento sobre o que exatamente deveria ser publicado.",
+     "Meses depois, um fundo controlado por [Fabiano Zettel](https://www.masterwhats.com.br/chat/fabiano-zettel), cunhado de Vorcaro, [comprou 49,9% do Brazil Journal](https://www.brasil247.com/midia/cunhado-de-vorcaro-investiu-em-participacao-acionaria-no-brazil-journal-a-biblia-da-faria-lima/). Samor afirma ser sócio apenas de Flávio Carneiro, nega ligação com Vorcaro ou com o Master e diz manter independência editorial."
+    ]
+   }
+  ],
+  "sources": [
+   "https://braziljournal.com/",
+   "https://www.brasil247.com/midia/cunhado-de-vorcaro-investiu-em-participacao-acionaria-no-brazil-journal-a-biblia-da-faria-lima/"
+  ]
+ },
+ "messages": [
+  {
+   "id": 1,
+   "timestamp": "2024-04-26T14:57:10-03:00",
+   "date": "2024-04-26",
+   "time": "14:57:10",
+   "sender": "DV",
+   "content": "Alexandre pediu",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 2,
+   "timestamp": "2024-04-26T14:57:57-03:00",
+   "date": "2024-04-26",
+   "time": "14:57:57",
+   "sender": "DV",
+   "content": "se possivel pra incluir que antes do evento ele se reuniu com os ministros do supremo\nToffoli, moraes e gilmar mendes",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 3,
+   "timestamp": "2024-04-26T14:58:28-03:00",
+   "date": "2024-04-26",
+   "time": "14:58:28",
+   "sender": "Geraldo",
+   "content": "No post de ontem?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 4,
+   "timestamp": "2024-04-26T14:59:15-03:00",
+   "date": "2024-04-26",
+   "time": "14:59:15",
+   "sender": "DV",
+   "content": "Nao, Tony blair",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 5,
+   "timestamp": "2024-04-26T14:59:17-03:00",
+   "date": "2024-04-26",
+   "time": "14:59:17",
+   "sender": "DV",
+   "content": "Se reuniu",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 6,
+   "timestamp": "2024-04-26T14:59:27-03:00",
+   "date": "2024-04-26",
+   "time": "14:59:27",
+   "sender": "DV",
+   "content": "Na materia do Blair que vai soltar",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 7,
+   "timestamp": "2024-04-26T15:01:02-03:00",
+   "date": "2024-04-26",
+   "time": "15:01:02",
+   "sender": "Geraldo",
+   "content": "Ahhh, falar que ALEXANDRE SE REUNIU COM BLAIR ?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 8,
+   "timestamp": "2024-04-26T15:01:25-03:00",
+   "date": "2024-04-26",
+   "time": "15:01:25",
+   "sender": "Geraldo",
+   "content": "Chamada de voz perdida",
+   "type": "call",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 9,
+   "timestamp": "2024-04-26T15:02:11-03:00",
+   "date": "2024-04-26",
+   "time": "15:02:11",
+   "sender": "Geraldo",
+   "content": "Ou TODOS os ministros se reuniram com Blair?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 10,
+   "timestamp": "2024-04-26T15:02:11-03:00",
+   "date": "2024-04-26",
+   "time": "15:02:11",
+   "sender": "Geraldo",
+   "content": "Ou que os ministros fizeram uma reuniao entre si ?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 11,
+   "timestamp": "2024-04-26T15:02:21-03:00",
+   "date": "2024-04-26",
+   "time": "15:02:21",
+   "sender": "Geraldo",
+   "content": "Não está claro pela tua mensagem",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  },
+  {
+   "id": 12,
+   "timestamp": "2024-04-26T15:03:40-03:00",
+   "date": "2024-04-26",
+   "time": "15:03:40",
+   "sender": "DV",
+   "content": "Antes do meu debate com o tony Blair, os 3 ministros do STF se reuniram privadamente com o ex primeiro ministro",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": [],
+   "source_page": 187,
+   "source_figure": 194
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "export": {
+  "generated_at": "2026-09-05T20:15:11.052Z",
+  "format_version": 1,
+  "site": "https://www.masterwhats.com.br",
+  "url": "https://www.masterwhats.com.br/#/chat/jair-bolsonaro",
+  "repository": "https://github.com/rafaelbressan/masterzap",
+  "timezone": "America/Sao_Paulo",
+  "utc_offset": "-03:00"
+ },
+ "conversation": {
+  "id": "jair-bolsonaro",
+  "participants": [
+   "Jair Bolsonaro",
+   "Mauro Cid"
+  ],
+  "contact": "Mauro Cid",
+  "saved_as": null,
+  "phone": null,
+  "date_range": {
+   "start": "2022-12-29",
+   "end": "2023-01-30"
+  },
+  "total_messages": 6,
+  "media_counts": {
+   "images": 0,
+   "videos": 0,
+   "documents": 0
+  },
+  "source": "Conteúdo fornecido pelo usuário",
+  "source_detail": {
+   "kind": "user-provided",
+   "label": "Conteúdo fornecido pelo usuário",
+   "document": null,
+   "document_sha256": null,
+   "made_public": null,
+   "how": "Conteúdo fornecido diretamente para inclusão no projeto."
+  },
+  "note": "Horários não informados no material fornecido; 00:00:00 é um horário técnico. Outras datas foram identificadas pela PF/UOL, mas não tiveram conteúdo ou data detalhados."
+ },
+ "profile": {
+  "about": null,
+  "sections": [
+   {
+    "title": "Mauro Cid",
+    "paragraphs": [
+     "Conversa fornecida pelo usuário, identificada no material como um diálogo entre Jair Bolsonaro e Mauro Cid. Os horários originais não foram informados."
+    ]
+   }
+  ],
+  "sources": []
+ },
+ "messages": [
+  {
+   "id": 1,
+   "timestamp": "2022-12-29T00:00:00-03:00",
+   "date": "2022-12-29",
+   "time": "00:00:00",
+   "sender": "Mauro Cid",
+   "content": "O senhor vai trazer árvore e o barco?",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": []
+  },
+  {
+   "id": 2,
+   "timestamp": "2022-12-29T00:00:01-03:00",
+   "date": "2022-12-29",
+   "time": "00:00:01",
+   "sender": "Jair Bolsonaro",
+   "content": "[Mensagem apagada]",
+   "type": "deleted",
+   "is_edited": false,
+   "attachment": null,
+   "urls": []
+  },
+  {
+   "id": 3,
+   "timestamp": "2022-12-29T00:00:02-03:00",
+   "date": "2022-12-29",
+   "time": "00:00:02",
+   "sender": "Jair Bolsonaro",
+   "content": "[Mensagem apagada]",
+   "type": "deleted",
+   "is_edited": false,
+   "attachment": null,
+   "urls": []
+  },
+  {
+   "id": 4,
+   "timestamp": "2022-12-29T00:00:03-03:00",
+   "date": "2022-12-29",
+   "time": "00:00:03",
+   "sender": "Mauro Cid",
+   "content": "Sim, senhor",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": []
+  },
+  {
+   "id": 5,
+   "timestamp": "2023-01-30T00:00:00-03:00",
+   "date": "2023-01-30",
+   "time": "00:00:00",
+   "sender": "Mauro Cid",
+   "content": "[conteúdo/reportagem]",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": []
+  },
+  {
+   "id": 6,
+   "timestamp": "2023-01-30T00:00:01-03:00",
+   "date": "2023-01-30",
+   "time": "00:00:01",
+   "sender": "Jair Bolsonaro",
+   "content": "Cid, a investigação sobre você é pra ver\nse me pega...",
+   "type": "text",
+   "is_edited": false,
+   "attachment": null,
+   "urls": []
+  }
+ ]
+}

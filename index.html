@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArquivoZap — Arquivo público de conversas</title>
+  <meta name="description" content="Arquivo navegável de conversas de domínio público: busca, links diretos e proveniência. 35 conversas, ~66 mil mensagens." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0B3D2E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-mark" aria-hidden="true">AZ</div>
+      <div class="loading-text">Abrindo o arquivo</div>
+      <div class="loading-bar-track"><div class="loading-bar-fill"></div></div>
+      <p class="loading-footer">Corpus público · proveniência visível</p>
+    </div>
+  </div>
+  <div id="app" hidden>
+    <h1 class="sr-only">ArquivoZap — Arquivo público de conversas</h1>
+  </div>
+  <noscript>
+    <main style="max-width:40rem;margin:2rem auto;padding:1rem;font-family:system-ui;">
+      <h1>ArquivoZap</h1>
+      <p>Ative JavaScript para navegar o arquivo. Os dados também estão em <code>/export/</code>.</p>
+    </main>
+  </noscript>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
