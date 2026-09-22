@@ -8,11 +8,30 @@ import type {
   Message,
   Profile,
 } from './types';
+import {
+  blobEnabled,
+  blobExists,
+  blobGetJson,
+  blobListKeys,
+  blobPutJson,
+} from './blob';
 
 const ROOT = process.cwd();
 export const CMS_ROOT = join(ROOT, 'data', 'cms');
 
-async function exists(path: string): Promise<boolean> {
+function useBlob(): boolean {
+  return blobEnabled();
+}
+
+function assertWritable(): void {
+  if (process.env.VERCEL && !blobEnabled()) {
+    throw new Error(
+      'Na Vercel o filesystem não persiste. Configure BLOB_READ_WRITE_TOKEN (Vercel Blob) para criar/editar casos.',
+    );
+  }
+}
+
+async function fsExists(path: string): Promise<boolean> {
   try {
     await access(path);
     return true;
@@ -21,18 +40,30 @@ async function exists(path: string): Promise<boolean> {
   }
 }
 
-async function readJson<T>(path: string, fallback: T): Promise<T> {
+async function readCmsJson<T>(key: string, fallback: T): Promise<T> {
+  if (useBlob()) return blobGetJson<T>(key, fallback);
   try {
-    const raw = await readFile(path, 'utf8');
+    const raw = await readFile(join(CMS_ROOT, key), 'utf8');
     return JSON.parse(raw) as T;
   } catch {
     return fallback;
   }
 }
 
-async function writeJson(path: string, data: unknown): Promise<void> {
+async function writeCmsJson(key: string, data: unknown): Promise<void> {
+  assertWritable();
+  if (useBlob()) {
+    await blobPutJson(key, data);
+    return;
+  }
+  const path = join(CMS_ROOT, key);
   await mkdir(dirname(path), { recursive: true });
   await writeFile(path, JSON.stringify(data, null, 2), 'utf8');
+}
+
+async function cmsKeyExists(key: string): Promise<boolean> {
+  if (useBlob()) return blobExists(key);
+  return fsExists(join(CMS_ROOT, key));
 }
 
 function normalize(str: string): string {
@@ -56,7 +87,13 @@ export function chunkMessages(messages: Message[]): {
   }
   const datesSorted = [...byDate.keys()].sort();
   const dates: DateIndexEntry[] = [];
-  const searchIndex: Array<{ id: number; date: string; sender: string; content: string; _n: string }> = [];
+  const searchIndex: Array<{
+    id: number;
+    date: string;
+    sender: string;
+    content: string;
+    _n: string;
+  }> = [];
   for (const date of datesSorted) {
     const dayMsgs = byDate.get(date)!;
     dayMsgs.sort((a, b) => a.id - b.id);
@@ -82,20 +119,25 @@ export function chunkMessages(messages: Message[]): {
 }
 
 export async function ensureCmsRoot(): Promise<void> {
+  if (useBlob()) {
+    if (!(await blobExists('index.json'))) {
+      await blobPutJson('index.json', { version: 1, cases: [] } satisfies CmsIndex);
+    }
+    return;
+  }
   await mkdir(CMS_ROOT, { recursive: true });
-  const indexPath = join(CMS_ROOT, 'index.json');
-  if (!(await exists(indexPath))) {
-    await writeJson(indexPath, { version: 1, cases: [] } satisfies CmsIndex);
+  if (!(await fsExists(join(CMS_ROOT, 'index.json')))) {
+    await writeCmsJson('index.json', { version: 1, cases: [] } satisfies CmsIndex);
   }
 }
 
 export async function getIndex(): Promise<CmsIndex> {
   await ensureCmsRoot();
-  return readJson<CmsIndex>(join(CMS_ROOT, 'index.json'), { version: 1, cases: [] });
+  return readCmsJson<CmsIndex>('index.json', { version: 1, cases: [] });
 }
 
 export async function saveIndex(index: CmsIndex): Promise<void> {
-  await writeJson(join(CMS_ROOT, 'index.json'), index);
+  await writeCmsJson('index.json', index);
 }
 
 export async function listPublishedCases(): Promise<CaseMeta[]> {
@@ -137,8 +179,7 @@ export async function createCase(input: {
     published: input.published ?? true,
     builtin: false,
   };
-  await mkdir(join(CMS_ROOT, 'cases', id, 'conversations'), { recursive: true });
-  await writeJson(join(CMS_ROOT, 'cases', id, 'meta.json'), meta);
+  await writeCmsJson(`cases/${id}/meta.json`, meta);
   index.cases.push(meta);
   await saveIndex(index);
   return meta;
@@ -159,32 +200,45 @@ export async function updateCase(
   };
   index.cases[idx] = updated;
   await saveIndex(index);
-  await writeJson(join(CMS_ROOT, 'cases', caseId, 'meta.json'), updated);
+  await writeCmsJson(`cases/${caseId}/meta.json`, updated);
   return updated;
 }
 
 export async function listConversations(caseId: string): Promise<ConversationMeta[]> {
-  const dir = join(CMS_ROOT, 'cases', caseId, 'conversations');
-  if (!(await exists(dir))) return [];
-  const entries = await readdir(dir, { withFileTypes: true });
   const out: ConversationMeta[] = [];
-  for (const e of entries) {
-    if (!e.isDirectory()) continue;
-    const meta = await readJson<ConversationMeta | null>(
-      join(dir, e.name, 'meta.json'),
-      null,
-    );
-    if (meta) out.push(meta);
+
+  if (useBlob()) {
+    const keys = await blobListKeys(`cases/${caseId}/conversations`);
+    const metaKeys = keys.filter((k) => /\/conversations\/[^/]+\/meta\.json$/.test(k));
+    for (const key of metaKeys) {
+      const meta = await readCmsJson<ConversationMeta | null>(key, null);
+      if (meta) out.push(meta);
+    }
+  } else {
+    const dir = join(CMS_ROOT, 'cases', caseId, 'conversations');
+    if (!(await fsExists(dir))) return [];
+    const entries = await readdir(dir, { withFileTypes: true });
+    for (const e of entries) {
+      if (!e.isDirectory()) continue;
+      const meta = await readCmsJson<ConversationMeta | null>(
+        `cases/${caseId}/conversations/${e.name}/meta.json`,
+        null,
+      );
+      if (meta) out.push(meta);
+    }
   }
-  return out.sort((a, b) => (b.last_message?.timestamp || '').localeCompare(a.last_message?.timestamp || ''));
+
+  return out.sort((a, b) =>
+    (b.last_message?.timestamp || '').localeCompare(a.last_message?.timestamp || ''),
+  );
 }
 
 export async function getConversation(
   caseId: string,
   convId: string,
 ): Promise<ConversationMeta | null> {
-  return readJson<ConversationMeta | null>(
-    join(CMS_ROOT, 'cases', caseId, 'conversations', convId, 'meta.json'),
+  return readCmsJson<ConversationMeta | null>(
+    `cases/${caseId}/conversations/${convId}/meta.json`,
     null,
   );
 }
@@ -197,10 +251,8 @@ export async function saveConversationBundle(input: {
 }): Promise<ConversationMeta> {
   const { caseId, messages, profile } = input;
   const conversation = { ...input.conversation, caseId };
-  const convDir = join(CMS_ROOT, 'cases', caseId, 'conversations', conversation.id);
-  await mkdir(convDir, { recursive: true });
+  const base = `cases/${caseId}/conversations/${conversation.id}`;
 
-  // normalize message ids/dates
   const normalized = messages.map((m, i) => {
     const date = m.date || String(m.timestamp || '').slice(0, 10);
     const time = m.time || String(m.timestamp || '').slice(11, 19) || '00:00:00';
@@ -232,14 +284,17 @@ export async function saveConversationBundle(input: {
   }
 
   const { dates, byDate, searchIndex } = chunkMessages(normalized);
-  await writeJson(join(convDir, 'meta.json'), conversation);
-  await writeJson(join(convDir, 'index.json'), { dates });
-  await writeJson(join(convDir, 'search-index.json'), searchIndex);
-  if (profile) await writeJson(join(convDir, 'profile.json'), profile);
 
+  const writes: Array<Promise<void>> = [
+    writeCmsJson(`${base}/meta.json`, conversation),
+    writeCmsJson(`${base}/index.json`, { dates }),
+    writeCmsJson(`${base}/search-index.json`, searchIndex),
+  ];
+  if (profile) writes.push(writeCmsJson(`${base}/profile.json`, profile));
   for (const [date, dayMsgs] of byDate) {
-    await writeJson(join(convDir, 'days', `${date}.json`), { date, messages: dayMsgs });
+    writes.push(writeCmsJson(`${base}/days/${date}.json`, { date, messages: dayMsgs }));
   }
+  await Promise.all(writes);
 
   const index = await getIndex();
   const c = index.cases.find((x) => x.id === caseId);
@@ -255,31 +310,37 @@ export async function getDayMessages(
   convId: string,
   date: string,
 ): Promise<Message[]> {
-  const data = await readJson<{ messages: Message[] }>(
-    join(CMS_ROOT, 'cases', caseId, 'conversations', convId, 'days', `${date}.json`),
+  const data = await readCmsJson<{ messages: Message[] }>(
+    `cases/${caseId}/conversations/${convId}/days/${date}.json`,
     { messages: [] },
   );
   return data.messages || [];
 }
 
-export async function getConversationIndex(caseId: string, convId: string): Promise<DateIndexEntry[]> {
-  const data = await readJson<{ dates: DateIndexEntry[] }>(
-    join(CMS_ROOT, 'cases', caseId, 'conversations', convId, 'index.json'),
+export async function getConversationIndex(
+  caseId: string,
+  convId: string,
+): Promise<DateIndexEntry[]> {
+  const data = await readCmsJson<{ dates: DateIndexEntry[] }>(
+    `cases/${caseId}/conversations/${convId}/index.json`,
     { dates: [] },
   );
   return data.dates || [];
 }
 
 export async function getSearchIndex(caseId: string, convId: string) {
-  return readJson(
-    join(CMS_ROOT, 'cases', caseId, 'conversations', convId, 'search-index.json'),
+  return readCmsJson(
+    `cases/${caseId}/conversations/${convId}/search-index.json`,
     [],
   );
 }
 
 export async function getProfile(caseId: string, convId: string): Promise<Profile | null> {
-  return readJson<Profile | null>(
-    join(CMS_ROOT, 'cases', caseId, 'conversations', convId, 'profile.json'),
+  if (!(await cmsKeyExists(`cases/${caseId}/conversations/${convId}/profile.json`))) {
+    return null;
+  }
+  return readCmsJson<Profile | null>(
+    `cases/${caseId}/conversations/${convId}/profile.json`,
     null,
   );
 }

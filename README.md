@@ -31,7 +31,7 @@ O corpus inicial (Vorcaro / Bolsonaro / Lula) continua disponível como caso **A
 ### Persistência
 
 - **Local:** grava em `data/cms/`
-- **Vercel:** o filesystem não persiste; configure `BLOB_READ_WRITE_TOKEN` (Vercel Blob) para produção durável, ou rode o painel em ambiente com volume. Sem Blob, o corpus inicial estático em `public/data` continua ok.
+- **Vercel:** o CMS grava no Vercel Blob quando `BLOB_READ_WRITE_TOKEN` está definido. Sem o token, criar/editar casos falha (o corpus estático em `public/data` continua ok).
 
 Variáveis:
 

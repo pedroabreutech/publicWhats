@@ -1,28 +1,64 @@
 /**
- * Optional durable storage for Vercel via Blob.
- * When BLOB_READ_WRITE_TOKEN is missing, callers use local filesystem store.
+ * Durable JSON storage via Vercel Blob.
+ * When BLOB_READ_WRITE_TOKEN is missing, the CMS store uses the local filesystem.
  */
-import { put, list } from '@vercel/blob';
+import { put, list, head } from '@vercel/blob';
+
+const PREFIX = 'cms/';
 
 export function blobEnabled(): boolean {
   return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 }
 
-export async function blobPutJson(pathname: string, data: unknown): Promise<string> {
-  const blob = await put(pathname, JSON.stringify(data), {
+export function blobPath(key: string): string {
+  return `${PREFIX}${key.replace(/^\/+/, '')}`;
+}
+
+export async function blobPutJson(key: string, data: unknown): Promise<string> {
+  const blob = await put(blobPath(key), JSON.stringify(data), {
     access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
     allowOverwrite: true,
+    // CMS data changes often; avoid month-long stale cache
+    cacheControlMaxAge: 60,
   });
   return blob.url;
 }
 
-export async function blobGetJson<T>(pathname: string, fallback: T): Promise<T> {
-  const { blobs } = await list({ prefix: pathname, limit: 1 });
-  const hit = blobs.find((b) => b.pathname === pathname);
-  if (!hit) return fallback;
-  const res = await fetch(hit.url, { cache: 'no-store' });
-  if (!res.ok) return fallback;
-  return (await res.json()) as T;
+export async function blobGetJson<T>(key: string, fallback: T): Promise<T> {
+  try {
+    const meta = await head(blobPath(key));
+    const res = await fetch(meta.url, { cache: 'no-store' });
+    if (!res.ok) return fallback;
+    return (await res.json()) as T;
+  } catch {
+    return fallback;
+  }
+}
+
+export async function blobExists(key: string): Promise<boolean> {
+  try {
+    await head(blobPath(key));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/** List all blob pathnames under a logical CMS key prefix (no leading cms/). */
+export async function blobListKeys(keyPrefix: string): Promise<string[]> {
+  const prefix = blobPath(keyPrefix.endsWith('/') ? keyPrefix : `${keyPrefix}/`);
+  const keys: string[] = [];
+  let cursor: string | undefined;
+  do {
+    const page = await list({ prefix, cursor, limit: 1000 });
+    for (const b of page.blobs) {
+      if (b.pathname.startsWith(PREFIX)) {
+        keys.push(b.pathname.slice(PREFIX.length));
+      }
+    }
+    cursor = page.hasMore ? page.cursor : undefined;
+  } while (cursor);
+  return keys;
 }
