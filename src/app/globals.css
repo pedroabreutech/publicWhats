@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  --bg-app: #0f1a17;
+  --bg-sidebar: #13241f;
+  --bg-panel: #18302a;
+  --bg-chat: #0c1613;
+  --bg-elevated: #1e3a33;
+  --bg-hover: #23453c;
+  --bg-input: #0a1210;
+  --border: #2a4a40;
+  --border-soft: #1f3630;
+  --text: #e8f0ec;
+  --text-muted: #9bb5ab;
+  --text-faint: #6f8a7f;
+  --accent: #2f9e7a;
+  --accent-soft: #1a5c47;
+  --radius: 14px;
+  --font: "DM Sans", system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --sidebar-w: 360px;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg-app);
+  color: var(--text);
+  font-family: var(--font);
+}
+a { color: var(--accent); }
+button, input, textarea, select { font: inherit; color: inherit; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+}
+.btn-primary {
+  background: var(--accent);
+  border-color: transparent;
+  color: #052016;
+  font-weight: 600;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
+.field label { font-size: 0.85rem; color: var(--text-muted); }
+.field input, .field textarea, .field select {
+  padding: 0.65rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-input);
+  outline: none;
+}
+.field input:focus, .field textarea:focus { border-color: var(--accent); }
+.card {
+  background: var(--bg-sidebar);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+.error { color: #f0a0a0; font-size: 0.9rem; }
+.ok { color: #9be7c4; font-size: 0.9rem; }

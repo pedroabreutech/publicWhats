@@ -1,46 +1,56 @@
 # PublicWhats
 
-Arquivo navegável de conversas de domínio público — busca, deep-links e proveniência.
+Arquivo público de conversas + **painel editorial** para jornalistas criarem casos e importarem conversas pela web (sem Git).
 
-Repositório: [pedroabreutech/publicWhats](https://github.com/pedroabreutech/publicWhats)  
-Site: [https://publicwhats.vercel.app](https://publicwhats.vercel.app)
+- Site: [https://publicwhats.vercel.app](https://publicwhats.vercel.app)
+- Repo: [pedroabreutech/publicWhats](https://github.com/pedroabreutech/publicWhats)
 
-Plataforma inspirada na arquitetura do [MasterWhats / masterzap](https://github.com/rafaelbressan/masterzap): SPA leve com **chunks JSON por dia** + **lazy load LRU**.
+## Como rodar
 
-## Stack
-
-- Vite 6 + TypeScript (vanilla, sem framework)
-- Corpus público (35 conversas / ~66.602 mensagens) já em `public/data/`
-- Export `.md` / `.json` / `.zip` em `public/export/`
-- Áudios e avatares em `public/assets/`
-
-## Como rodar (clone completo)
+Requer **Node 20+**.
 
 ```bash
-git clone https://github.com/pedroabreutech/publicWhats.git
-cd publicWhats
+cp .env.example .env.local   # senha padrão: publicwhats
 npm install
 npm run dev
 ```
 
-Abra `http://localhost:5173`. Os dados já vêm no repositório — não é necessário rodar `prepare-data` para usar o app.
+Abra:
+- Público: http://localhost:5173
+- Painel: http://localhost:5173/admin/login
 
-### Regenerar dados (opcional)
+## MVP do CMS
+
+1. Login em `/admin/login` (senha `CMS_PASSWORD`)
+2. **Criar caso** (escândalo)
+3. Abrir o caso → **importar JSON** de conversa (`messages` + contato, ou export `{ conversation, messages, profile }`)
+4. O caso aparece na home e em `/c/{caso}`
+
+O corpus inicial (Vorcaro / Bolsonaro / Lula) continua disponível como caso **Arquivo público (corpus inicial)** (somente leitura).
+
+### Persistência
+
+- **Local:** grava em `data/cms/`
+- **Vercel:** o filesystem não persiste; configure `BLOB_READ_WRITE_TOKEN` (Vercel Blob) para produção durável, ou rode o painel em ambiente com volume. Sem Blob, o corpus inicial estático em `public/data` continua ok.
+
+Variáveis:
 
 ```bash
-npm run prepare-data   # re-baixa o zip público e recria chunks
+CMS_PASSWORD=sua-senha
+CMS_SECRET=segredo-com-pelo-menos-32-caracteres!!
+# BLOB_READ_WRITE_TOKEN=...
 ```
 
-## Rotas
+## Stack
 
-- `#/` — home
-- `#/c/{conversationId}` — conversa
-- `#/c/{conversationId}/m/{messageId}` — mensagem exata
+- Next.js 15 (App Router) + TypeScript
+- API routes + iron-session
+- Visualizador client-side com lazy load por dia
+- Corpus estático legado em `public/data` + `public/assets`
 
-## Áudios
+## Scripts legados
 
-Há 4 MP3 em `public/assets/` (`audio-nikolas-ferreira`, `silas-malafaia`, `flavio-bolsonaro`, `lula-dilma`). Mensagens `.opus` sem arquivo aparecem como “Áudio indisponível”.
-
-## Aviso
-
-Conteúdo sensível de domínio público. Sem vínculo com as partes envolvidas. Exibe proveniência em cada conversa.
+```bash
+npm run prepare-data   # re-gera chunks do corpus estático
+npm run legacy:vite    # app Vite antigo (backup)
+```

@@ -1,7 +1,11 @@
 node_modules/
 dist/
+.next/
 data/raw/
+data/cms/
 .DS_Store
 *.log
 .vite/
 .vercel
+.env
+.env.local
