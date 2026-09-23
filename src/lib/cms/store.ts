@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile, readdir, access } from 'node:fs/promises';
+import { mkdir, readFile, writeFile, readdir, access, rm } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import type {
   CaseMeta,
@@ -11,6 +11,7 @@ import type {
 import {
   blobEnabled,
   blobExists,
+  blobDeletePrefix,
   blobGetJson,
   blobListKeys,
   blobPutJson,
@@ -202,6 +203,29 @@ export async function updateCase(
   await saveIndex(index);
   await writeCmsJson(`cases/${caseId}/meta.json`, updated);
   return updated;
+}
+
+export async function deleteCase(caseId: string): Promise<void> {
+  assertWritable();
+  const index = await getIndex();
+  const idx = index.cases.findIndex((c) => c.id === caseId || c.slug === caseId);
+  if (idx < 0) throw new Error('Caso não encontrado.');
+  const meta = index.cases[idx]!;
+  if (meta.builtin) {
+    throw new Error('O corpus inicial não pode ser excluído.');
+  }
+  const id = meta.id;
+  index.cases.splice(idx, 1);
+  await saveIndex(index);
+
+  if (useBlob()) {
+    await blobDeletePrefix(`cases/${id}`);
+    return;
+  }
+  const dir = join(CMS_ROOT, 'cases', id);
+  if (await fsExists(dir)) {
+    await rm(dir, { recursive: true, force: true });
+  }
 }
 
 export async function listConversations(caseId: string): Promise<ConversationMeta[]> {

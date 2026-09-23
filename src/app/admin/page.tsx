@@ -13,6 +13,7 @@ export default function AdminHomePage() {
   const [error, setError] = useState('');
   const [ok, setOk] = useState('');
   const [loading, setLoading] = useState(false);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
 
   async function load() {
     const auth = await fetch('/api/auth').then((r) => r.json());
@@ -53,6 +54,27 @@ export default function AdminHomePage() {
   async function logout() {
     await fetch('/api/auth', { method: 'DELETE' });
     router.replace('/admin/login');
+  }
+
+  async function removeCase(c: CaseMeta) {
+    const confirmed = window.confirm(
+      `Excluir o caso “${c.title}”? Todas as conversas importadas serão removidas. Esta ação não pode ser desfeita.`,
+    );
+    if (!confirmed) return;
+    setDeletingId(c.id);
+    setError('');
+    setOk('');
+    const res = await fetch(`/api/cases/${encodeURIComponent(c.id)}`, {
+      method: 'DELETE',
+    });
+    const data = await res.json().catch(() => ({}));
+    setDeletingId(null);
+    if (!res.ok) {
+      setError(data.error || 'Erro ao excluir caso');
+      return;
+    }
+    setOk(`Caso “${c.title}” excluído.`);
+    await load();
   }
 
   return (
@@ -124,14 +146,24 @@ export default function AdminHomePage() {
                   {c.builtin ? 'Corpus inicial (somente leitura)' : c.published ? 'Publicado' : 'Rascunho'} · {c.id}
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start' }}>
+              <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
                 <Link className="btn" href={`/c/${c.id}`}>
                   Ver
                 </Link>
                 {!c.builtin ? (
-                  <Link className="btn btn-primary" href={`/admin/cases/${c.id}`}>
-                    Conversas
-                  </Link>
+                  <>
+                    <Link className="btn btn-primary" href={`/admin/cases/${c.id}`}>
+                      Conversas
+                    </Link>
+                    <button
+                      type="button"
+                      className="btn btn-danger"
+                      disabled={deletingId === c.id}
+                      onClick={() => void removeCase(c)}
+                    >
+                      {deletingId === c.id ? 'Excluindo…' : 'Excluir'}
+                    </button>
+                  </>
                 ) : null}
               </div>
             </div>

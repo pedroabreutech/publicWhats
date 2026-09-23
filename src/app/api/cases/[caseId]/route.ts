@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getSession } from '@/lib/cms/auth';
-import { updateCase } from '@/lib/cms/store';
+import { deleteCase, updateCase } from '@/lib/cms/store';
 import { BUILTIN_CASE_ID, resolveCase } from '@/lib/cms/unified';
 
 export async function GET(
@@ -36,6 +36,32 @@ export async function PATCH(
       published: body.published,
     });
     return NextResponse.json({ case: meta });
+  } catch (e) {
+    return NextResponse.json(
+      { error: e instanceof Error ? e.message : 'Erro' },
+      { status: 400 },
+    );
+  }
+}
+
+export async function DELETE(
+  _req: Request,
+  ctx: { params: Promise<{ caseId: string }> },
+) {
+  const session = await getSession();
+  if (!session.admin) {
+    return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
+  }
+  const { caseId } = await ctx.params;
+  if (caseId === BUILTIN_CASE_ID) {
+    return NextResponse.json(
+      { error: 'O corpus inicial não pode ser excluído.' },
+      { status: 400 },
+    );
+  }
+  try {
+    await deleteCase(caseId);
+    return NextResponse.json({ ok: true });
   } catch (e) {
     return NextResponse.json(
       { error: e instanceof Error ? e.message : 'Erro' },

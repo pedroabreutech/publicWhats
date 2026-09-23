@@ -25,6 +25,7 @@ Abra:
 2. **Criar caso** (escândalo)
 3. Abrir o caso → **importar JSON** de conversa (`messages` + contato, ou export `{ conversation, messages, profile }`)
 4. O caso aparece na home e em `/c/{caso}`
+5. **Excluir caso** no painel (remove o caso e as conversas; o corpus inicial não pode ser apagado)
 
 O corpus inicial (Vorcaro / Bolsonaro / Lula) continua disponível como caso **Arquivo público (corpus inicial)** (somente leitura).
 

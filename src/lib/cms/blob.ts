@@ -2,7 +2,7 @@
  * Durable JSON storage via Vercel Blob.
  * When BLOB_READ_WRITE_TOKEN is missing, the CMS store uses the local filesystem.
  */
-import { put, list, head } from '@vercel/blob';
+import { put, list, head, del } from '@vercel/blob';
 
 const PREFIX = 'cms/';
 
@@ -61,4 +61,19 @@ export async function blobListKeys(keyPrefix: string): Promise<string[]> {
     cursor = page.hasMore ? page.cursor : undefined;
   } while (cursor);
   return keys;
+}
+
+/** Delete every blob under a logical CMS key prefix (e.g. cases/foo). */
+export async function blobDeletePrefix(keyPrefix: string): Promise<void> {
+  const keys = await blobListKeys(keyPrefix);
+  // Also remove a blob that matches the prefix exactly (rare for folders).
+  const exact = keyPrefix.replace(/\/+$/, '');
+  if (await blobExists(exact)) keys.push(exact);
+  if (!keys.length) return;
+  const pathnames = [...new Set(keys.map((k) => blobPath(k)))];
+  // del accepts batches; chunk to stay safe
+  const chunkSize = 100;
+  for (let i = 0; i < pathnames.length; i += chunkSize) {
+    await del(pathnames.slice(i, i + chunkSize));
+  }
 }

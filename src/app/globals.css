@@ -50,6 +50,14 @@ button, input, textarea, select { font: inherit; color: inherit; }
   color: #052016;
   font-weight: 600;
 }
+.btn-danger {
+  background: transparent;
+  border-color: #8a3a3a;
+  color: #f0a0a0;
+}
+.btn-danger:hover {
+  background: rgba(196, 92, 92, 0.15);
+}
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .field { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
