@@ -66,7 +66,7 @@ export async function POST(
   }
   if (!Array.isArray(messages) || messages.length === 0) {
     return NextResponse.json(
-      { error: 'Envie ao menos uma mensagem no JSON (campo messages).' },
+      { error: 'Envie ao menos uma mensagem.' },
       { status: 400 },
     );
   }

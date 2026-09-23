@@ -23,7 +23,7 @@ Abra:
 
 1. Login em `/admin/login` (senha `CMS_PASSWORD`)
 2. **Criar caso** (escândalo)
-3. Abrir o caso → **importar JSON** de conversa (`messages` + contato, ou export `{ conversation, messages, profile }`)
+3. Abrir o caso → **digitar mensagens** no formulário (ou importar JSON avançado)
 4. O caso aparece na home e em `/c/{caso}`
 5. **Excluir caso** no painel (remove o caso e as conversas; o corpus inicial não pode ser apagado)
 
