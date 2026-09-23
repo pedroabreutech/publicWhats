@@ -125,11 +125,6 @@ export default function AdminHomePage() {
             {loading ? 'Criando…' : 'Criar caso'}
           </button>
         </form>
-        <p style={{ color: 'var(--text-faint)', fontSize: '0.85rem', marginBottom: 0 }}>
-          Em produção na Vercel, configure <code>CMS_PASSWORD</code> e, para gravar dados
-          persistentes, <code>BLOB_READ_WRITE_TOKEN</code>. Localmente os casos ficam em{' '}
-          <code>data/cms/</code>.
-        </p>
       </section>
 
       <section>
